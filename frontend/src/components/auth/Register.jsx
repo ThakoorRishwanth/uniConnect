@@ -1,11 +1,11 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 // import api from "../../api/axios";
 import axios from 'axios'
 import { AuthContext } from "../../context/AuthContext";
 import { toast } from "react-toastify";
 
 export const Register = ()=>{
-  const { loginUser } = useContext(AuthContext);
+
 
   const [formData, setFormData] = useState({
     name: "",
@@ -26,6 +26,8 @@ export const Register = ()=>{
       const res = await axios.post("http://localhost:8000/auth/register", formData);
 
        toast.success("Account created successfully 🎉 Please login!");
+
+       console.log(res)
 
       // auto-login user after register
       // loginUser(res.data);
