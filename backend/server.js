@@ -4,9 +4,11 @@ require('dotenv').config()
 const port = process.env.PORT || 9090
 const db = process.env.MONGODB_URI
 const route = require('./src/routes/authRoutes')
+const cors = require('cors')
 
 
 const app = express()
+app.use(cors())
 
 app.use(express.json());
 
