@@ -1,0 +1,47 @@
+/* Navbar styles */
+.navbar {
+  height: 70px;
+  padding: 0 24px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+    font-style: normal;
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: lighter;
+
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.navbar-logout {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #ffffff;
+  color: #000;
+}
